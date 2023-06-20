@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item android:id="@+id/menuAddProject"
+        android:title="Add PROJECT"
+        android:icon="@drawable/ic_add"
+        app:showAsAction="never"/>-->
+   <item android:id="@+id/menuAddGroup"
+        android:title="Add PROJECT GROUP"
+        android:icon="@drawable/ic_add"
+        app:showAsAction="collapseActionView"/>
+</menu>

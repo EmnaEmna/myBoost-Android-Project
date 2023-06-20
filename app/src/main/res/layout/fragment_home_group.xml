@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.HomeGroupFragment">
+
+  <!-- TODO: Update blank fragment layout -->
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recyclerGroupView"
+      android:layout_marginTop="200dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:listitem="@layout/group_single_row"
+      android:layout_marginBottom="150dp" />
+
+  <Button
+      android:id="@+id/addProjectGroupbtn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/add_project_group"
+      android:textSize="20sp"
+      android:layout_marginBottom="5dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintBottom_toTopOf="@id/text"
+     />
+
+  <TextView
+      android:id="@+id/text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/here_are_my_project_groups"
+      android:textColor="@color/black"
+      android:textSize="30dp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@id/recyclerGroupView"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
